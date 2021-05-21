@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="static\css\styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c194b2ebba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Contacts</title>
+  </head>
+  <body>
+    <div id="container">
+      <nav class="navbar navbar-expand-lg navbar-light size">
+        <a class="navbar-brand" href="#">Web Developer/App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="contacts.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="down2">
+        <section class="contact-container">
+          <div class="form-wrap">
+            <h1 class="large center">Get In Touch</h1>
+            <p class="add-title">Send Me a Message</p>
+            <form action="contact.php" method="post">
+              <div class="fname label">
+                <label for="fullname">Full Name</label>
+                <input
+                  type="text"
+                  class="input"
+                  name="name"
+                  placeholder="Your full name... "
+                  required
+                />
+              </div>
+
+              <div class="email label">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="input"
+                  name="email"
+                  placeholder="Your email... "
+                  required
+                />
+              </div>
+
+              <div class="contact label">
+                <label for="contact">Contact #</label>
+                <input
+                  type="contact"
+                  class="input"
+                  name="contact"
+                  placeholder="Your contact number... "
+                  required
+                />
+              </div>
+
+              <div class="company label">
+                <label for="company">Company</label>
+                <input
+                  type="company"
+                  class="input"
+                  name="company"
+                  placeholder="Your company... "
+                  required
+                />
+              </div>
+
+              <div class="user-msg">
+                <label for="message">Your Message</label>
+                <textarea
+                  name="message"
+                  class="input"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="submit-btn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- <form method="post" action="#">
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form> -->
+        </section>
+      </div>
+
+      <footer>
+        <div class="bottom">
+          <i class="fas fa-phone-volume"><a href="#"> Call</a></i>
+          <ul>
+            <small><li>M:217-520-6088</li></small>
+            <small><li>H:217-428-6088</li></small>
+          </ul>
+        </div>
+        <div class="bottom">
+          <i class="fas fa-envelope"><a href="#"> Email</a></i>
+          <ul>
+            <small><li>oldhamtyrone@yahoo.com</li></small>
+          </ul>
+        </div>
+        <div class="bottom">
+          <i class="fab fa-github-square"><a href="#"> GitHub</a></i>
+          <ul>
+            <small><li>https://github.com/RevHam1</li></small>
+          </ul>
+        </div>
+        <div class="bottom">
+          <i class="fab fa-linkedin"
+            ><a href="https://www.linkedin.com/in/tyrone-oldham-03108250/">
+              Linkin</a
+            ></i
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
